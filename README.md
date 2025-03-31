@@ -11,7 +11,7 @@ A collection of cmake modules and macros used to build C++ projects
 Add as submodule
 
     git submodule init
-    git submodule add url cmake
+    git submodule add https://github.com:AlexBurnes/cmake_scripts.git cmake
 
 Place at start of CMakeLists.txt after project():
 
