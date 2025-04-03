@@ -4,3 +4,8 @@ Initial version
 
 # Added
 - collection of cmake modules and macroses 
+
+# [v0.1.1] - 2025-04-03
+
+# Added
+- licence

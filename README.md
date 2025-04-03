@@ -1,10 +1,10 @@
 # Abstract
 
-A collection of cmake modules and macros used to build C++ projects
+Collection of cmake modules and macroses used to build C++ projects
 
 # Version
 
-    0.1.0 intial version
+0.1.1 
 
 # Usage
 
@@ -33,3 +33,6 @@ See [CHANGELOG](CHANGELOG.md)
 * pedantic.cmake - set pedantic compile flags
 * out_of_source_dir.cmake - check build source code out of source directory
 * download_project.cmake - https://github.com/Crascit/DownloadProject
+
+# License 
+This scripts is distributed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), see [LICENSE](https://github.com:AlexBurnes/cmake_scripts/blob/master/LICENSE) for more information.
