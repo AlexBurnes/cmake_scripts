@@ -9,3 +9,8 @@ Initial version
 
 # Added
 - licence
+
+# [v0.1.2] - 2025-04-04
+
+# Added
+- set CMAKE_JOB_POOL_COMPILE and CMAKE_JOB_POOL_LINK to parallel_jobs for Ninja cmake generator

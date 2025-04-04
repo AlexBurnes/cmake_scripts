@@ -4,7 +4,7 @@ Collection of CMake modules and macros used to build C++ projects.
 
 # Version
 
-0.1.1 
+0.1.2
 
 # Usage
 

@@ -53,5 +53,7 @@ macro(define_parallel_degree)
 
     # Define Ninja job pool
     set_property(GLOBAL PROPERTY JOB_POOLS single_job=1 parallel_jobs=${CMAKE_BUILD_PARALLEL_LEVEL})
+    set(CMAKE_JOB_POOL_COMPILE parallel_jobs)
+    set(CMAKE_JOB_POOL_LINK parallel_jobs)
 
 endmacro()
