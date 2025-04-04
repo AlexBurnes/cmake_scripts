@@ -1,6 +1,6 @@
 # Abstract
 
-Collection of cmake modules and macroses used to build C++ projects
+Collection of CMake modules and macros used to build C++ projects.
 
 # Version
 
@@ -8,12 +8,12 @@ Collection of cmake modules and macroses used to build C++ projects
 
 # Usage
 
-Add as submodule
+Add as a submodule
 
     git submodule init
     git submodule add https://github.com/AlexBurnes/cmake_scripts.git cmake
 
-Place at start of CMakeLists.txt after project():
+Place at the beginning of CMakeLists.txt after project():
 
     include(cmake/modules.cmake)
 
@@ -24,15 +24,15 @@ See [CHANGELOG](CHANGELOG.md)
 
 # Modules
 
-* modules.cmake - append cmake modules directory, load and init: log, color, degree and out_of_source_dir
-* colors.cmake - define colors for colored output message
-* log.cmake - define log function
-* dump.cmake - dump all variables 
-* cppcheck.cmake - run cppcheck for project source codes
-* degree.cmake  - define parallel jobs
-* pedantic.cmake - set pedantic compile flags
-* out_of_source_dir.cmake - check build source code out of source directory
-* download_project.cmake - https://github.com/Crascit/DownloadProject
+* **modules.cmake**: Append CMake modules directory, load and initilize: log, color, degree and out_of_source_dir.
+* **colors.cmake**: Define colors for colored output messages.
+* **log.cmake**: Define log functions.
+* **dump.cmake**: Dump all CMake variables.
+* **cppcheck.cmake**: Run CppCheck on project source codes.
+* **degree.cmake**: Define parallel jobs.
+* **pedantic.cmake**: Set pedantic compile flags.
+* **out_of_source_dir.cmake**: Check if buildin source code outside the source directory.
+* **download_project.cmake**: Download project via Git submodule, https://github.com/Crascit/DownloadProject
 
 # License 
 This scripts is distributed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), see [LICENSE](https://github.com:AlexBurnes/cmake_scripts/blob/master/LICENSE) for more information.
