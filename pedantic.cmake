@@ -15,8 +15,9 @@
 
 # enable Werror for gcc, see article about it
 # https://github.com/cpp-best-practices/cppbestpractices/blob/master/02-Use_the_Tools_Available.md#gcc--clang
-
-if(CMAKE_COMPILER_IS_GNUCXX)
-
-  set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-unused-parameter")
+if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU" OR "${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+    set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-unused-parameter")
+    lg("Set pedantic CMAKE_CXX_FLAGS: ${CMAKE_CXX_FLAGS}")
+else()
+    lw("Unsupported compiler CMAKE_CXX_COMPILER_ID '${CMAKE_CXX_COMPILER_ID}' to set pedantic CMAKE_CXX_FLAGS")
 endif()
